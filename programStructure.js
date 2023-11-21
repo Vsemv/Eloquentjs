@@ -90,16 +90,30 @@
 
             // exercise 3
     // chess board
+// let string = '';
+// for(let col = 0; col < 8; col++){
+//     for(let row = 0; row < 8; row++){
+//         if(col % 2 != 0 || row % 2 == 0){
+//             string += ' ';
+//         }else if(col % 2 == 0 || row % 2 != 0){
+//             string += '#';
+//         }
+//     }
+//     string += '\n';
+// }
+// console.log(string);
+// console.log(string.length);
+
+let size = 20;
 let string = '';
-for(let col = 0; col < 8; col++){
-    for(let row = 0; row < 8; row++){
-        if(col % 2 != 0 || row % 2 == 0){
-            string += ' ';
-        }else if(col % 2 == 0 || row % 2 != 0){
-            string += '#';
+for(let col = 0; col < size; col++){
+    for(let row = 0; row < size; row++){
+        if((col + row) % 2 === 0){
+            string = string + ' ';
+        }else{
+            string = string + '#';
         }
     }
     string += '\n';
 }
 console.log(string);
-console.log(string.length);
