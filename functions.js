@@ -17,7 +17,7 @@
 // };
 // console.log(power(2, 5));
 
-                // variables and scopes
+//                 variables and scopes
 
 // let x = 10;
 // if (true) {
@@ -34,7 +34,7 @@
 // console.log(halve(100));
 // console.log(n);
 
-                // nested scopes
+//                 nested scopes
 
 // const hummus = function(factor) {
 //     const ingredient = function(amount, unit, name) {
@@ -53,7 +53,7 @@
 // };
 // hummus(2);
 
-                // functions as values
+//                 functions as values
 
 // let launchMissiles = function() {
 //     missileSystem.launch('now');
@@ -62,54 +62,79 @@
 //     launchMissiles = function(){}
 // };
 
-                // declarative entry
+//                 declarative entry
 
-function square(x) {
-    return x * x;
-};
-
-console.log('Voice from future:', future());
-function future() {
-    return 'there will be no flying cars';
-};
-
-                // arrow functions
-
-const power = (base, exponent) => {
-    let result = 1;
-    for(let count = 0; count < exponent; count++) {
-        result *= base;
-    };
-    return result;
-};
-console.log(power(2, 10));
-
-    // this two functions is same. if you have only one parameter you can write function without "()" and without body of function "{}"
-const square1 = (x) => { return x * x};
-const square2 = x => x * x;
-console.log(square1(2), square2(3));
-
-const horn = () => {
-    console.log('Toot');
-};
-horn();
-
-                // call stack
-
-function greet(who) {
-    console.log('Hello, ' + who);
-}
-greet('Harry');
-console.log('Good bye!');
-
-// function chicken() {
-//     return egg();
+// function square(x) {
+//     return x * x;
 // };
-// function egg() {
-//     return chicken();
+
+// console.log('Voice from future:', future());
+// function future() {
+//     return 'there will be no flying cars';
 // };
-// console.log(chicken() + ' came first');
 
-                // optioonal arguments
+//                 // arrow functions
+
+// const power = (base, exponent) => {
+//     let result = 1;
+//     for(let count = 0; count < exponent; count++) {
+//         result *= base;
+//     };
+//     return result;
+// };
+// console.log(power(2, 10));
+
+//     // this two functions is same. if you have only one parameter you can write function without "()" and without body of function "{}"
+// const square1 = (x) => { return x * x};
+// const square2 = x => x * x;
+// console.log(square1(2), square2(3));
+
+// const horn = () => {
+//     console.log('Toot');
+// };
+// horn();
+
+//                 // call stack
+
+// function greet(who) {
+//     console.log('Hello, ' + who);
+// }
+// greet('Harry');
+// console.log('Good bye!');
+
+// // function chicken() {
+// //     return egg();
+// // };
+// // function egg() {
+// //     return chicken();
+// // };
+// // console.log(chicken() + ' came first');
+
+//                // optioonal arguments
+
+// function square(x) { return x * x; }
+// console.log(square(4, true, 'hedgehog'));
+
+// function minus(a, b) {
+//     if (b === undefined) return -a;
+//     else return a - b;
+// };
+// console.log(minus(10));
+// console.log(minus(10, 5));
+
+// function power(base, exponent = 2) {
+//     let result = 1;
+//     for (let count = 0; count < exponent; count++) {
+//         result *= base;
+//     }
+//     return result;
+// };
+// console.log(power(4));
+// console.log(power(4, 6));
+
+// console.log('C', 'O', 2);
+
+                // closing
 
 
+                
