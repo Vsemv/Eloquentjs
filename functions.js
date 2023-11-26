@@ -75,3 +75,41 @@ function future() {
 
                 // arrow functions
 
+const power = (base, exponent) => {
+    let result = 1;
+    for(let count = 0; count < exponent; count++) {
+        result *= base;
+    };
+    return result;
+};
+console.log(power(2, 10));
+
+    // this two functions is same. if you have only one parameter you can write function without "()" and without body of function "{}"
+const square1 = (x) => { return x * x};
+const square2 = x => x * x;
+console.log(square1(2), square2(3));
+
+const horn = () => {
+    console.log('Toot');
+};
+horn();
+
+                // call stack
+
+function greet(who) {
+    console.log('Hello, ' + who);
+}
+greet('Harry');
+console.log('Good bye!');
+
+// function chicken() {
+//     return egg();
+// };
+// function egg() {
+//     return chicken();
+// };
+// console.log(chicken() + ' came first');
+
+                // optioonal arguments
+
+
