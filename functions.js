@@ -55,3 +55,23 @@
 
                 // functions as values
 
+// let launchMissiles = function() {
+//     missileSystem.launch('now');
+// };
+// if (safeMode) {
+//     launchMissiles = function(){}
+// };
+
+                // declarative entry
+
+function square(x) {
+    return x * x;
+};
+
+console.log('Voice from future:', future());
+function future() {
+    return 'there will be no flying cars';
+};
+
+                // arrow functions
+
