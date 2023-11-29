@@ -174,5 +174,36 @@ function findSolution(target) {
     }
     return find(1, '1');
 }
-console.log(findSolution(13));
-                
+console.log(findSolution(33));
+
+                // expansion of functions
+
+function printFarmInventory(cows, chickens) {
+    let cowString = String(cows);
+    while (cowString.length < 3) {
+        cowString = '0' + cowString;
+    }
+    console.log(`${cowString} коров`);
+    let chickenString = String(chickens);
+    while (chickenString.length < 3) {
+        chickenString = '0' + chickenString;
+    }
+    console.log(`${chickenString} цыплят`);
+}
+printFarmInventory(7, 11);
+
+console.log('divide functions. from down you can see examplae of divided functions');
+
+function zeroPad(number, width) {
+    let string = String(number);
+    while (string.length < width) {
+        string = '0' + string;
+    }
+    return string
+}
+function printFarmInventoryExp(cows, chickens, pigs) {
+    console.log(`${zeroPad(cows, 3)} коров`);
+    console.log(`${zeroPad(chickens, 3)} цыплят`);
+    console.log(`${zeroPad(pigs, 3)} свиней`);
+};
+printFarmInventoryExp(7, 16, 3);
