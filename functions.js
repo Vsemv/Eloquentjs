@@ -242,3 +242,30 @@ let isEven = (number) => {
     };
 };
 console.log(isEven(-50));
+
+    // letter counting
+
+// let string = 'fdgWFhthWghtRsfQrtW';
+// let upperCaseLetter = '';
+// for (let i = 0; i <= string.length-1; i++) {
+//     if (string[i] === 'W') {
+//         upperCaseLetter += string[i];
+//     };
+// };
+// console.log(upperCaseLetter);
+
+let countChar = (string, Char) => {
+    let findChar = '';
+    for (let i = 0; i <= string.length-1; i++) {
+        if (string[i] === Char) {
+            findChar += string[i];
+        };
+    };
+    return findChar.length;
+};
+console.log(countChar('BheheBergecbBbeeChrjrjb', 'e'));
+let countBs = (string) => {
+    return countChar(string, 'B');
+};
+console.log(countBs('BegewgB6jhcbvbsBregw4hCerg4Wwe'));
+
