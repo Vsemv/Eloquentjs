@@ -37,3 +37,46 @@ let descriptions = {
     'touching the tree': 'touched the tree'
 };
 
+let anObject = {left: 1, right: 2};
+console.log(anObject.left);
+delete anObject.left;
+console.log(anObject.left);
+console.log('left' in anObject);
+console.log('right' in anObject);
+
+console.log(Object.keys({x: 0, y: 0, z: 2}));
+console.log(Object.keys(anObject));
+
+let objectA = {a: 1, b: 2};
+Object.assign(objectA, {b: 3, c: 4});
+console.log(objectA);
+
+let firstObj = {purple: 2, green: 5};
+let secondObj = {yellow: 1, whhite: 0};
+Object.assign(firstObj, secondObj);
+console.log(firstObj);
+console.log(secondObj);
+
+console.log(typeof []);
+
+    // array of objects:
+let journal = [
+    {
+        events: ['worked', 'touched the tree', 'ate pizza', 'ran', 'wached TV'],
+        squirrel: false
+    },
+    {
+        events: ['worked', 'ate ice cream', 'ate cauliflower', 'ate lasagna', 'touched the tree', 'brushed my teeth'],
+        squirrel: false
+    },
+    {
+        events: ['day off', 'rode bike', 'rested', 'ate peanut', 'drank beer'],
+        squirrel: true
+        /* etc */
+    },
+];
+
+                // changeability
+
+
+                
